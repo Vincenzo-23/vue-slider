@@ -33,6 +33,19 @@ createApp({
             currentImageIndex: 0,
         }
     },
+    methods: {
+        incrementIndex(){
+            if (this.currentImageIndex < this.slides.length - 1){
+                this.currentImageIndex++
+            }
+        },
+        decrementIndex(){
+            if (this.currentImageIndex > 0){
+                this.currentImageIndex--
+            }
+        }
+
+    }
   }).mount('#app')
 
 

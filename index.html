@@ -17,8 +17,8 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <div class="prev" @click="currentImageIndex--"></div>
-                    <div class="next" @click="currentImageIndex++"></div>
+                    <div class="prev" @click="decrementIndex()"></div>
+                    <div class="next" @click="incrementIndex()"></div>
                     <img :src="slides[currentImageIndex].image" alt="Spiderman" />
                     <div class="text">
                         <h3>Spiderman</h3>
