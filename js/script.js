@@ -37,11 +37,15 @@ createApp({
         incrementIndex(){
             if (this.currentImageIndex < this.slides.length - 1){
                 this.currentImageIndex++
+            }else if(this.currentImageIndex === this.slides.length - 1){
+                this.currentImageIndex = 0
             }
         },
         decrementIndex(){
             if (this.currentImageIndex > 0){
                 this.currentImageIndex--
+            }else if(this.currentImageIndex === 0){
+                this.currentImageIndex = this.slides.length -1
             }
         }
 
